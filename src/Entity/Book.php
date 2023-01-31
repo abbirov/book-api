@@ -13,7 +13,8 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: BookRepository::class)]
 #[ApiResource]
 #[ApiFilter(SearchFilter::class, properties: ['id' => 'exact', 'category' => 'exact'])]
-#[ApiFilter(OrderFilter::class, properties: ['id', 'name'])]
+#[ApiFilter(OrderFilter::class, properties: ['id', 'name', ])]
+
 class Book
 {
     #[ORM\Id]
